@@ -1,0 +1,16 @@
+body {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  background-color: white;
+}
+
+header {
+  font-size: xx-large;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  background-color: gray;
+  height: 50px;
+}

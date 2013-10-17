@@ -1,0 +1,56 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>css handson 21cafe tools</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+<div id="base">
+  <div id="line">
+    <div id="main">
+      <header>ファミリーデザイン</header>
+      <section id="main">
+        <div>
+          <input type="text" placeholder="フリガナ">
+        </div>
+        <div>
+          <input type="text" placeholder="氏名">様
+        </div>
+        <div>
+          <select name="sex">
+            <option value="">男</option>
+            <option value="">女</option>
+          </select>
+        </div>
+        <div>
+          <input id="birthday" type="date" value="1960-01-01"><input type="text" readonly id="age" style="width: 30px;"/>歳
+        </div>
+      </section>
+      <section id="sub" style="text-align: right;">
+        <div style="margin-right: 30px">
+          分析日<input id="analysisDate" type="date" readonly style="width:160px;">
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <footer>
+    <input type="button" value="戻る">
+    <input type="button" value="次へ">
+  </footer>
+
+</div>
+
+</body>
+</html>
