@@ -1,0 +1,62 @@
+@mixin input-style
+  margin:
+    top: 2px
+    left: 5px
+    right: 5px
+    bottom: 2px
+  border: 1px solid #cccccc
+  color: gray
+
+@mixin button-events
+  &:focus, &:hover
+    +background(linear-gradient(#ccc, white))
+  &:active
+    +background(linear-gradient(#ccc, #ccc))
+
+.main-select
+  font:
+    size: large
+  @include input-style
+  +transition(border linear 0.2s, box-shadow linear 0.2s)
+  +border-radius(4px)
+
+　
+.main-text,
+.main-password
+  font:
+    size: large
+  @include input-style
+  background:
+    color: white
+  padding: 4px 2px
+  +transition(border linear 0.2s, box-shadow linear 0.2s)
+  +border-radius(4px)
+
+.main-textarea
+  font:
+    size: large
+  @include input-style
+  background:
+    color: white
+  padding: 4px 2px
+  +transition(border linear 0.2s, box-shadow linear 0.2s)
+  +border-radius(4px)
+ 
+.main-button,
+.main-submit,
+.main-reset
+  @include button-events
+  font:
+    size: large
+  @include input-style
+  padding: 4px 24px
+  +transition(border linear 0.2s, box-shadow linear 0.2s)
+  +border-radius(4px)
+  +box-shadow(1px 1px 3px rgba(0, 0, 0.75, 0.75)) 
+  +background(linear-gradient(#fff, #ccc)) 
+ 
+.main-checkbox,
+.main-radio
+  font:
+    size: large
+  @include input-style

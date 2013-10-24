@@ -1,0 +1,8 @@
+$span: 60px
+@for $i from 1 through 12 
+  .span#{$i}
+    width: $span + 80px * ($i - 1)
+    background-color: $hcolor
+    margin:
+      top: 2px
+      bottom: 2px
